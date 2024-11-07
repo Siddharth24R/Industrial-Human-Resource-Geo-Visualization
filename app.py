@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler  # Re-added this import
 
 # Load and clean data
-data_path = r'C:\ALL folder in dexstop\PycharmProjects\GUVI-Ai\Resource Management\cleaned_combined_data.csv'
+data_path = r'C:\ALL folder in desktop\PycharmProjects\GUVI-Ai\Resource Management\cleaned_combined_data.csv'
 data = pd.read_csv(data_path)
 
 # Remove extra spaces from column names
