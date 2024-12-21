@@ -517,13 +517,6 @@ def main():
         st.markdown("**Cluster 5**")
         st.markdown("Focused on: Service Activities and Other General Operations.")
         st.markdown("---")
-
-        # Uncomment to display original cluster terms (optional)
-        # if cluster_terms:
-        #     for cluster, terms in cluster_terms.items():
-        #         st.markdown(f"**{cluster}**")
-        #         st.markdown(" • ".join(terms))
-        #         st.markdown("---")
         
         st.subheader("Industry Distribution")
         selected_metric = st.selectbox(
