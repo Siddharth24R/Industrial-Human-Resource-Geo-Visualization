@@ -1,88 +1,91 @@
-# Industrial Human Resource Geo-Visualization Dashboard
+# Industrial HR Geo-Visualization Dashboard
 
-This project visualizes the distribution of human resources across various industrial sectors in India using a Streamlit dashboard. It incorporates geo-location-based worker counts, industry information, clustering of industries, and feature distributions, enabling users to explore workforce data in a structured and interactive way.
+## 📊 Overview
+The **Industrial HR Geo-Visualization Dashboard** is a Streamlit-based interactive web application designed to visualize and analyze human resource distribution across various industries in India. This project integrates geospatial data, visualization tools, and machine learning techniques to provide insights into workforce demographics and their geographic distributions.
 
-## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Setup and Installation](#setup-and-installation)
-4. [Usage](#usage)
-5. [Technologies Used](#technologies-used)
+## 🌟 Features
+- **Choropleth Maps**: Visualize the distribution of workers across Indian states for selected metrics.
+- **Gender Distribution**: Explore the male-to-female worker ratio using pie charts and bar graphs.
+- **Data Distribution**: Analyze metrics with histograms for better understanding.
+- **Clustering**: Perform clustering analysis using TF-IDF and K-Means for industrial categorization.
+- **Responsive Design**: User-friendly dashboard with customized visualizations and clean UI.
+- **Modular Components**: Easily extendable and maintainable code structure.
 
-## Project Overview
+## 🚀 Technologies Used
+- **Frontend**: [Streamlit](https://streamlit.io/)
+- **Backend**: Python (pandas, numpy, scikit-learn, nltk)
+- **Visualization**: Plotly
+- **Geospatial Data**: GeoJSON for mapping
+- **Data Source**: CSV dataset containing industrial and demographic statistics
 
-This dashboard provides insights into the distribution and composition of main and marginal workers in various Indian industrial sectors. It includes the following:
-- Worker counts by state and district.
-- Industry information and clustering using text analysis.
-- Data visualizations for workforce distribution, feature distributions, and correlation analysis.
+## 📂 File Structure
+```bash
+├── app.py                  # Main Streamlit application file
+├── cleaned_combined_data.csv # Input dataset for visualization
+├── README.md               # Project documentation
+   ```
 
-The data is sourced from `cleaned_combined_data.csv` and includes industry, demographic, and geographic information.
+## 🔧 Installation
 
-## Features
-
-### 1. **State and District Selection**
-   - Users can select a specific **state** and **district** to view relevant workforce data.
-
-### 2. **Worker and Industry Information**
-   - Displays total counts of **main** and **marginal workers** by gender, along with industry details.
-
-### 3. **Industry Clustering**
-   - Clusters industries using **TF-IDF** and **KMeans**, providing insights into similar industry types based on textual descriptions.
-
-### 4. **Worker Distribution by Industry**
-   - Visualizes distribution of main and marginal workers in various industries, with the option to view urban or rural worker data.
-
-### 5. **Feature Distribution**
-   - Provides histogram visualizations of various numerical features to understand data distributions.
-
-### 6. **Correlation Matrix**
-   - Displays a correlation matrix for numerical features, helping identify potential relationships between different workforce characteristics.
-
-## Setup and Installation
-
-### Prerequisites
-- Python 3.7 or above
-- Required Python libraries: `pandas`, `numpy`, `streamlit`, `plotly`, `scikit-learn`
-
-### Installation
-1. Clone this repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/industrial-hr-geo-visualization.git
    cd industrial-hr-geo-visualization
    ```
 
-2. Install the required libraries:
+2. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Ensure the data file (`cleaned_combined_data.csv`) is in the specified path:
-   ```text
-   C:\ALL folder in desktop\PycharmProjects\GUVI-Ai\Resource Management\cleaned_combined_data.csv
-   ```
-
-## Usage
-
-1. Run the Streamlit app:
+3. Run the application:
    ```bash
    streamlit run app.py
    ```
-2. Open the provided URL in a web browser.
 
-### Dashboard Sections
+4. Open your browser at `http://localhost:8501`.
 
-- **Select State and District**: Choose specific locations to view relevant workforce data.
-- **Worker and Industry Information**: Explore total worker counts and industry data in the selected district.
-- **Industry Clustering**: Visualize clusters of similar industries based on TF-IDF vectorization.
-- **Worker Distribution by Industry**: Select worker types and industries to view distribution charts.
-- **Feature Distribution**: Visualize distributions of numeric features in the dataset.
-- **Correlation Matrix**: Explore relationships between numeric features using a correlation heatmap.
+## 📚 How to Use
+1. Select a feature to visualize from the sidebar.
+2. Interact with choropleth maps, pie charts, and bar graphs to explore insights.
+3. Use clustering analysis to categorize industries and view grouped results.
 
-## Technologies Used
-- **Python Libraries**: 
-  - `Streamlit` for building the web app interface.
-  - `Pandas` and `NumPy` for data manipulation.
-  - `Plotly` for interactive visualizations.
-  - `scikit-learn` for clustering and scaling.
+## 📊 Visualizations
+1. **Choropleth Maps**:
+   Displays the distribution of selected metrics across Indian states.
+2. **Gender Distribution**:
+   Shows the proportion of male and female workers in various categories.
+3. **Clustering Analysis**:
+   Groups industries based on similarity for better insights.
+
+## 🤖 Machine Learning Techniques
+- **TF-IDF Vectorization**: Converts textual data into meaningful features.
+- **K-Means Clustering**: Groups industries into clusters for better understanding.
+- **Silhouette Score**: Evaluates clustering quality.
+
+## 🛠️ Development Notes
+- Ensure the dataset is present in the specified file path: `cleaned_combined_data.csv`.
+- Use the [GeoJSON URL](https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson) for map visualizations.
+
+## 📑 Dependencies
+- Streamlit
+- pandas
+- numpy
+- plotly
+- scikit-learn
+- nltk
+
+Install all required libraries using:
+```bash
+pip install -r requirements.txt
+```
+
+## 🎯 Future Enhancements
+- Add more datasets to expand visualization options.
+- Enable real-time data updates via API integration.
+- Enhance clustering with advanced machine learning models.
 
 ---
+      
+🌟 **Contributors**:Siddharth.R  
+📧 Contact: siddharth.r.college@gmail.com 
